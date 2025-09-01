@@ -23,7 +23,7 @@ void main() {
   for (var produto in produtos) {
     if (produto.valor > 50.00) {
       print(
-        '[ITEM EM DESTAQUE] ${produto.toString()} - Preço acima de R\$50.00!',
+        '[ITEM EM DESTAQUE] ${produto.toString()} - Preço acima de R\$500.00!',
       );
     } else {
       print(produto);
