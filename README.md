@@ -32,8 +32,8 @@ List<Produto> produtos = [
 
 O programa percorre a lista de produtos usando um loop for.
 
-Para cada produto, verifica se o valor é maior que R$50,00.
+Para cada produto, verifica se o valor é maior que R$500,00.
 
-Produtos com valor acima de R$50,00 são exibidos com a tag [ITEM EM DESTAQUE].
+Produtos com valor acima de R$500,00 são exibidos com a tag [ITEM EM DESTAQUE].
 
-Produtos com valor igual ou abaixo de R$50,00 são exibidos normalmente.
+Produtos com valor igual ou abaixo de R$500,00 são exibidos normalmente.
