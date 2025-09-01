@@ -3,7 +3,7 @@
 
 ## Descrição do Projeto
 
-Este projeto demonstra como criar e manipular uma lista de produtos utilizando a linguagem **Dart**. O programa mantém informações de produtos como ID, nome e valor, e exibe os produtos destacando aqueles com preço acima de R$50,00.
+Este projeto demonstra como criar e manipular uma lista de produtos utilizando a linguagem **Dart**. O programa mantém informações de produtos como ID, nome e valor, e exibe os produtos destacando aqueles com preço acima de R$500,00.
 
 ---
 
