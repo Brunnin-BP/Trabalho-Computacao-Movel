@@ -17,6 +17,7 @@ void main() {
     Produto(id: 2, nome: 'Teclado', valor: 149.50),
     Produto(id: 3, nome: 'Notbook', valor: 859.99),
     Produto(id: 4, nome: 'Fone de Ouvido', valor: 39.99),
+    Produto(id: 5, nome: 'Celular', valor: 999.99),
   ];
 
   print('Lista de Produtos Disponíveis:');
