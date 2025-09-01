@@ -21,7 +21,7 @@ void main() {
 
   print('Lista de Produtos Disponíveis:');
   for (var produto in produtos) {
-    if (produto.valor > 50.00) {
+    if (produto.valor > 500.00) {
       print(
         '[ITEM EM DESTAQUE] ${produto.toString()} - Preço acima de R\$500.00!',
       );
