@@ -1,9 +1,10 @@
-  // Definindo a classe Produto, que representa um item com id, nome e valor.//
+  // Definindo a classe Produto, que representa um item com id, nome e valor.
 class Produto {
   final int id;
   final String nome;
   final double valor;
 
+  // Construtor da classe Produto, que requer id, nome e valor.
   Produto({required this.id, required this.nome, required this.valor});
 
   @override
