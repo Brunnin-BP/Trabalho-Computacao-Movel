@@ -13,6 +13,7 @@ class Produto {
   const Produto({required this.id, required this.nome, required this.valor});
 }
 
+// Widget principal do aplicativo
 class ProdutoApp extends StatefulWidget {
   const ProdutoApp({super.key});
 
@@ -30,6 +31,7 @@ class _ProdutoAppState extends State<ProdutoApp> {
     const Produto(id: 5, nome: 'Celular', valor: 999.99),
   ];
 
+  // Contador usado para atribuir IDs únicos a novos produtos
   int _contador = 6; // Para gerar novos IDs
 
   // Função que adiciona um novo item à lista
@@ -74,11 +76,13 @@ class _ProdutoAppState extends State<ProdutoApp> {
         appBar: AppBar(
           title: const Text('Lista de Produtos'),
           actions: [
+            // Botão para inverter a ordem dos produtos
             IconButton(
               onPressed: _inverterOrdem,
               icon: const Icon(Icons.swap_vert),
               tooltip: "Inverter Ordem",
             ),
+            // Botão para remover o primeiro produto da lista
             IconButton(
               onPressed: _removerPrimeiroProduto,
               icon: const Icon(Icons.delete),
@@ -90,6 +94,7 @@ class _ProdutoAppState extends State<ProdutoApp> {
           itemCount: _produtos.length,
           itemBuilder: (context, index) {
             final produto = _produtos[index];
+            // Verifica se o produto deve ser destacado (valor > R$500,00)
             final destaque = produto.valor > 500.00;
 
             return Card(
@@ -102,6 +107,7 @@ class _ProdutoAppState extends State<ProdutoApp> {
                 ),
                 title: Text(produto.nome),
                 subtitle: Text('Valor: R\$${produto.valor.toStringAsFixed(2)}'),
+                // Exibe rótulo "🔥 Destaque" se o valor for alto
                 trailing: destaque
                     ? const Text(
                         '🔥 Destaque',
@@ -112,6 +118,7 @@ class _ProdutoAppState extends State<ProdutoApp> {
             );
           },
         ),
+        // Botão flutuante para adicionar um novo produto
         floatingActionButton: FloatingActionButton(
           onPressed: _adicionarProduto,
           tooltip: "Adicionar Produto",
