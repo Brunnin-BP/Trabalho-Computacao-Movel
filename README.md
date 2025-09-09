@@ -163,7 +163,7 @@ final List<Produto> _produtos = [
 - O método setState() é usado para notificar a interface sobre mudanças e redesenhar a tela.
 
 ---
-2. Adição de Botões de Interação
+2. 🛠️ Adição de Botões de Interação
 
 - FloatingActionButton (FAB) ➕ → adiciona um novo item.
 
@@ -180,7 +180,7 @@ floatingActionButton: FloatingActionButton(
 ),
 ```
 ---
-3. Manipulação da Lista
+3. 🛠️ Manipulação da Lista
 
 Foram criadas três funções para modificar a lista:
 ```dart
