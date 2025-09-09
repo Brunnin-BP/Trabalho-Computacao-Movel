@@ -12,6 +12,7 @@ class Produto {
   const Produto({required this.id, required this.nome, required this.valor});
 }
 
+// Lista constante de produtos
 const List<Produto> produtos = [
   Produto(id: 1, nome: 'Tv', valor: 1499.99),
   Produto(id: 2, nome: 'Teclado', valor: 149.50),
@@ -20,6 +21,7 @@ const List<Produto> produtos = [
   Produto(id: 5, nome: 'Celular', valor: 999.99),
 ];
 
+// Widget principal do aplicativo
 class ProdutoApp extends StatelessWidget {
   const ProdutoApp({super.key});
 
