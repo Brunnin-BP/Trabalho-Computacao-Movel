@@ -1,13 +1,13 @@
 # Trabalho-Computacao-Movel
 # Lista de Produtos em Dart - Parte 1
 
-## Descrição do Projeto
+## 📌 Descrição do Projeto
 
 Este projeto demonstra como criar e manipular uma lista de produtos utilizando a linguagem **Dart**. O programa mantém informações de produtos como ID, nome e valor, e exibe os produtos destacando aqueles com preço acima de R$500,00.
 
 ---
 
-## Estrutura de Dados
+## ✨ Estrutura de Dados
 
 Foi utilizada uma **classe `Produto`** para representar cada item. Cada objeto `Produto` possui os seguintes atributos:
 
@@ -29,7 +29,7 @@ List<Produto> produtos = [
 ```
 ---
 
-## Lógica Implementada
+## 🛠️ Lógica Implementada
 
 O programa percorre a lista de produtos usando um loop for.
 
