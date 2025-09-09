@@ -10,6 +10,7 @@ class Produto {
    // Sobrescreve o método toString() para exibir uma representação legível do objeto.
   @override
   String toString() {
+    // Formata a string retornada com os dados do produto.
     return 'Produto(id: $id, nome: "$nome", valor: R\$${valor.toStringAsFixed(2)})';
   }
 }
