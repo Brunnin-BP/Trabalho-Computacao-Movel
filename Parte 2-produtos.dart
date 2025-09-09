@@ -4,6 +4,7 @@ void main() {
   runApp(const ProdutoApp());
 }
 
+// Classe que representa um produto com id, nome e valor
 class Produto {
   final int id;
   final String nome;
