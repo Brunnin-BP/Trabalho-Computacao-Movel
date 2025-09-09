@@ -32,7 +32,7 @@ class _ProdutoAppState extends State<ProdutoApp> {
   ];
 
   // Contador usado para atribuir IDs únicos a novos produtos
-  int _contador = 6; // Para gerar novos IDs
+  int _contador = 6; 
 
   // Função que adiciona um novo item à lista
   void _adicionarProduto() {
