@@ -112,8 +112,9 @@ return Card(
 ---
 
 📷 Exemplo Visual
+---
 ![Example Image](Imagem Trabalho Parte 2.png)
-
+---
 
 
 
