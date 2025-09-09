@@ -91,6 +91,7 @@ const List<Produto> produtos = [
 
 A lista é renderizada com ListView.builder, que percorre os itens dinamicamente e cria os cartões de forma automática.
 A lógica de destaque é aplicada em cada item:
+```dart
 final destaque = produto.valor > 500.00;
 
 return Card(
