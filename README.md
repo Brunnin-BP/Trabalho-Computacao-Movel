@@ -113,7 +113,7 @@ return Card(
 
 📷 Exemplo Visual
 ---
-![Examplo Imagem](ImagemParte 2.png)
+.
 ---
 
 
