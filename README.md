@@ -113,7 +113,7 @@ return Card(
 
 📷 Exemplo Visual
 ---
-.
+<img width="1121" height="497" alt="Image" src="https://github.com/user-attachments/assets/d9c81b61-d147-44ba-9f4a-339b3bce45f0" />
 ---
 
 
