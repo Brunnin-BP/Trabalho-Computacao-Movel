@@ -28,11 +28,13 @@ class ProdutoApp extends StatelessWidget {
     return MaterialApp(
       title: 'Produtos em Destaque',
       theme: ThemeData(
+        // Define o esquema de cores do app com base em uma cor semente
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
       home: Scaffold(
         appBar: AppBar(title: const Text('Lista de Produtos')),
+         // Lista de produtos exibida com ListView.builder
         body: ListView.builder(
           itemCount: produtos.length,
           itemBuilder: (context, index) {
@@ -40,15 +42,20 @@ class ProdutoApp extends StatelessWidget {
             final destaque = produto.valor > 500.00;
 
             return Card(
+               // Define a cor do card com base se é destaque ou não
               color: destaque ? Colors.orange[100] : Colors.white,
               margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               child: ListTile(
+                // Ícone diferente para produtos em destaque
                 leading: Icon(
                   destaque ? Icons.star : Icons.shopping_cart,
                   color: destaque ? Colors.deepOrange : Colors.grey,
                 ),
+                // Nome do produto
                 title: Text(produto.nome),
+                // Valor do produto formatado
                 subtitle: Text('Valor: R\$${produto.valor.toStringAsFixed(2)}'),
+                // Texto adicional se o produto for destaque
                 trailing: destaque
                     ? const Text(
                         '🔥 Destaque',
