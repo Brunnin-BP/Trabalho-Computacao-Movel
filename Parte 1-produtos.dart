@@ -7,6 +7,7 @@ class Produto {
   // Construtor da classe Produto, que requer id, nome e valor.
   Produto({required this.id, required this.nome, required this.valor});
 
+   // Sobrescreve o método toString() para exibir uma representação legível do objeto.
   @override
   String toString() {
     return 'Produto(id: $id, nome: "$nome", valor: R\$${valor.toStringAsFixed(2)})';
