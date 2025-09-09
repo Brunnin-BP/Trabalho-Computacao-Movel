@@ -16,6 +16,7 @@ class Produto {
 }
 
 void main() {
+  // Criando uma lista de produtos com diferentes atributos.
   List<Produto> produtos = [
     Produto(id: 1, nome: 'Tv"', valor: 1499.99),
     Produto(id: 2, nome: 'Teclado', valor: 149.50),
@@ -26,11 +27,14 @@ void main() {
 
   print('Lista de Produtos Disponíveis:');
   for (var produto in produtos) {
+    // Verifica se o valor do produto é maior que R$500.00 para destacar itens mais caros.
     if (produto.valor > 500.00) {
+       // Exibe a mensagem de destaque para produtos com preço acima de R$500.00.
       print(
         '[ITEM EM DESTAQUE] ${produto.toString()} - Preço acima de R\$500.00!',
       );
     } else {
+      // Caso contrário, exibe apenas o produto normalmente.
       print(produto);
     }
   }
