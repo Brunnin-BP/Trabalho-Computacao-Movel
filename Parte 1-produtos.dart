@@ -1,3 +1,4 @@
+  // Definindo a classe Produto, que representa um item com id, nome e valor.//
 class Produto {
   final int id;
   final String nome;
